@@ -12,7 +12,7 @@ namespace _1.Odev.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FirstController : ControllerBase
+    public class StudentController : ControllerBase
     {
         /*
             - İlk hafta geliştirdiğiniz api kullanılacaktır.
@@ -26,6 +26,7 @@ namespace _1.Odev.Controllers
             - Fake bir kullanıcı giriş sistemi yapın ve custom bir attribute ile bunu kontrol edin.
             - Global exception middleware i oluşturun
         */
+        /*
         private static List<Student> _students = new List<Student>()
         {
             new Student(1, "Halil1", "Özler", new DateTime(1999, 4,28)),
@@ -34,8 +35,9 @@ namespace _1.Odev.Controllers
             new Student(4, "Halil4", "Özler4", new DateTime(2003, 4, 28))
         };
         private static int count = 4;
+        */
 
-        public FirstController()
+        public StudentController()
         {
         }
 

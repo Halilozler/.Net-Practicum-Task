@@ -1,10 +1,10 @@
-﻿<Properties StartupConfiguration="{5E8F486B-7F38-4EA6-98E7-B0D06DAC4669}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="1.Odev/Controllers/FirstController.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{5E8F486B-7F38-4EA6-98E7-B0D06DAC4669}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="1.Odev/Context/AppDbContext.cs">
     <Files>
-      <File FileName="1.Odev/Controllers/FirstController.cs" Line="34" Column="1" />
-      <File FileName="1.Odev/Model/Student.cs" Line="24" Column="1" />
-      <File FileName="1.Odev/Dtos/StudentDto.cs" />
-      <File FileName="1.Odev/Base/CommonResponse.cs" Line="18" Column="1" />
+      <File FileName="1.Odev/Service/StudentService.cs" Line="1" Column="1" />
+      <File FileName="1.Odev/Service/IStudentService.cs" Line="1" Column="1" />
+      <File FileName="1.Odev/Controllers/FirstController.cs" Line="25" Column="18" />
+      <File FileName="1.Odev/Context/AppDbContext.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,10 +12,12 @@
           <Node name="1.Odev" expanded="True">
             <Node name="1.Odev" expanded="True">
               <Node name="Base" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Context" expanded="True" />
               <Node name="CustomValidations" expanded="True" />
               <Node name="Dtos" expanded="True" />
+              <Node name="Mapping" expanded="True" />
               <Node name="Model" expanded="True" />
+              <Node name="Service" expanded="True" />
             </Node>
           </Node>
         </State>
