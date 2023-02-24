@@ -1,6 +1,6 @@
 ﻿using System;
 using _1.Odev.Model;
-using _1.Odev.Service;
+using _1.Odev.DataAccess;
 
 namespace _1.Odev.Extension
 {
@@ -8,7 +8,7 @@ namespace _1.Odev.Extension
     {
         public static void AddServicesDI(this IServiceCollection services)
         {
-            services.AddScoped<IGenericService<Student>, GenericService<Student>>();
+            services.AddScoped<IGenericAccess<Student>, GenericAccess<Student>>();
         }
     }
 }

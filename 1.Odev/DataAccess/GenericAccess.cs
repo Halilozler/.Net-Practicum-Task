@@ -2,15 +2,15 @@
 using _1.Odev.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace _1.Odev.Service
+namespace _1.Odev.DataAccess
 {
-    public class GenericService<Entity> : IGenericService<Entity> where Entity : class
+    public class GenericAccess<Entity> : IGenericAccess<Entity> where Entity : class
     {
         protected readonly AppDbContext Context;
         private DbSet<Entity> entities;
 
 
-        public GenericService(AppDbContext dbContext)
+        public GenericAccess(AppDbContext dbContext)
         {
             this.Context = dbContext;
             this.entities = Context.Set<Entity>();

@@ -36,7 +36,7 @@ namespace _1.Odev.Controllers
         };
         private static int count = 4;
         */
-
+        //private IMapper _mapper = 
         public StudentController()
         {
         }

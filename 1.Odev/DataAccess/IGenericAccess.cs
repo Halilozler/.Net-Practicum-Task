@@ -1,7 +1,7 @@
 ﻿using System;
-namespace _1.Odev.Service
+namespace _1.Odev.DataAccess
 {
-	public interface IGenericService<TEntity> where TEntity : class 
+	public interface IGenericAccess<TEntity> where TEntity : class 
 	{
         Task<TEntity> GetByIdAsync(int entityId);
         Task InsertAsync(TEntity entity);

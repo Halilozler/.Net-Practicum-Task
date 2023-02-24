@@ -52,6 +52,7 @@
     <None Remove="Serilog.Enrichers.Process" />
     <None Remove="Serilog.Settings.Configuration" />
     <None Remove="Extension\" />
+    <None Remove="DataAccess\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -63,5 +64,6 @@
     <Folder Include="Service\" />
     <Folder Include="Context\" />
     <Folder Include="Extension\" />
+    <Folder Include="DataAccess\" />
   </ItemGroup>
 </Project>
