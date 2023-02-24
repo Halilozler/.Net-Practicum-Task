@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using _1.Odev.Base;
 using _1.Odev.Dtos;
 using _1.Odev.Model;
@@ -58,9 +59,11 @@ namespace _1.Odev.Controllers
             {
                 return NotFound();
             }
-            Student newStudent = new Student(student.Id, studentDto.Name, studentDto.Surname, studentDto.BirthYear);
-            _students.Remove(student);
-            _students.Add(newStudent);
+
+            student.Name = studentDto.Name != default ? studentDto.Name : student.Name;
+            student.BirthYear = studentDto.BirthYear != default ? studentDto.BirthYear : student.BirthYear;
+            student.Surname = studentDto.Surname != default ? studentDto.Surname : student.Surname;
+
             return Ok(new CommonResponse<Student>(student));
         }
 
@@ -73,9 +76,9 @@ namespace _1.Odev.Controllers
             {
                 return NotFound();
             }
-            Student newStudent = new Student(student.Id, name, student.Surname, student.BirthYear);
-            _students.Remove(student);
-            _students.Add(newStudent);
+
+            student.Name = name != default ? name : student.Name;
+
             return Ok(new CommonResponse<Student>(student));
         }
 

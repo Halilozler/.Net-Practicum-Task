@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KgVNlRduCSb4VWmIoPvOJ1dzhYlmKbjipFG9+E5v8tOlYQMc0cmLv5NSEhDiI9i3mRhXFagvyLLKiVVPwGSwVg==",
+  "dgSpecHash": "/eJ27/3mAjhJVEi0fQZC1WZnUTWRLE/pXrV7DYRRz+QICcMoOYp62UARkoFpsD9NzDillLSuCbXKWvQaDIsYnQ==",
   "success": true,
-  "projectFilePath": "/Users/halilozler/Desktop/Odev/1.Odev/1.Odev/1.Odev.csproj",
+  "projectFilePath": "/Users/halilozler/Desktop/Net-Practicum-Task/1.Odev/1.Odev.csproj",
   "expectedPackageFiles": [
     "/Users/halilozler/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
     "/Users/halilozler/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",

@@ -9274,11 +9274,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/halilozler/Desktop/Odev/1.Odev/1.Odev/1.Odev.csproj",
+      "projectUniqueName": "/Users/halilozler/Desktop/Net-Practicum-Task/1.Odev/1.Odev.csproj",
       "projectName": "1.Odev",
-      "projectPath": "/Users/halilozler/Desktop/Odev/1.Odev/1.Odev/1.Odev.csproj",
+      "projectPath": "/Users/halilozler/Desktop/Net-Practicum-Task/1.Odev/1.Odev.csproj",
       "packagesPath": "/Users/halilozler/.nuget/packages/",
-      "outputPath": "/Users/halilozler/Desktop/Odev/1.Odev/1.Odev/obj/",
+      "outputPath": "/Users/halilozler/Desktop/Net-Practicum-Task/1.Odev/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/halilozler/.nuget/NuGet/NuGet.Config"
