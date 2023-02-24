@@ -64,11 +64,18 @@ namespace _1.Odev.Controllers
             {
                 return NotFound();
             }
+<<<<<<< Updated upstream:1.Odev/Controllers/StudentController.cs
 
             student.Name = studentDto.Name != default ? studentDto.Name : student.Name;
             student.BirthYear = studentDto.BirthYear != default ? studentDto.BirthYear : student.BirthYear;
             student.Surname = studentDto.Surname != default ? studentDto.Surname : student.Surname;
 
+=======
+            student.Name = 
+            Student newStudent = new Student(student.Id, studentDto.Name, studentDto.Surname, studentDto.BirthYear);
+            _students.Remove(student);
+            _students.Add(newStudent);
+>>>>>>> Stashed changes:1.Odev/Controllers/FirstController.cs
             return Ok(new CommonResponse<Student>(student));
         }
 
