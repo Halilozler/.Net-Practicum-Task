@@ -15,12 +15,16 @@ namespace _1.Odev.Controllers
     public class FirstController : ControllerBase
     {
         /*
-        + GET,POST,PUT,DELETE,PATCH methodları kullanılmalıdır.
-        + Http status code standartlarına uyulmalıdır. Error Handler ile 500, 400, 404, 200, 201 hatalarının standart format ile verilmesi
-        + Modellerde zorunlu alanların kontrolü yapılmalıdır.
-        + Routing kullanılmalıdır.
-        + Model binding işlemleri hem body den hemde query den yapılacak şekilde örneklendirilmelidir. Bonus:
-        + Standart crud işlemlerine ek olarak, listeleme ve sıralama işlevleride eklenmelidir. Örn: /api/first/list?name=abc
+            - İlk hafta geliştirdiğiniz api kullanılacaktır.
+            - Rest standartlarına uygun olmalıdır.
+            - solid prensiplerine uyulmalıdır.
+            - Fake servisler geliştirilerek Dependency injection kullanılmalıdır.
+            - Apinizde kullanılmak üzere extension geliştirin.
+            - Projede swagger implementasyonu gerçekleştirilmelidir.
+            - Global loglama yapan bir middleware(sadece actiona girildi gibi çok basit düzeyde)
+            Bonus
+            - Fake bir kullanıcı giriş sistemi yapın ve custom bir attribute ile bunu kontrol edin.
+            - Global exception middleware i oluşturun
         */
         private static List<Student> _students = new List<Student>()
         {
@@ -54,13 +58,15 @@ namespace _1.Odev.Controllers
         public async Task<IActionResult> Update([FromBody] StudentDto studentDto, int id)
         {
             var student = _students.Find(x => x.Id == id);
-            if(student == null)
+            if (student == null)
             {
                 return NotFound();
             }
-            Student newStudent = new Student(student.Id, studentDto.Name, studentDto.Surname, studentDto.BirthYear);
-            _students.Remove(student);
-            _students.Add(newStudent);
+
+            student.Name = studentDto.Name != default ? studentDto.Name : student.Name;
+            student.BirthYear = studentDto.BirthYear != default ? studentDto.BirthYear : student.BirthYear;
+            student.Surname = studentDto.Surname != default ? studentDto.Surname : student.Surname;
+
             return Ok(new CommonResponse<Student>(student));
         }
 
@@ -73,9 +79,9 @@ namespace _1.Odev.Controllers
             {
                 return NotFound();
             }
-            Student newStudent = new Student(student.Id, name, student.Surname, student.BirthYear);
-            _students.Remove(student);
-            _students.Add(newStudent);
+
+            student.Name = name != default ? name : student.Name;
+
             return Ok(new CommonResponse<Student>(student));
         }
 
