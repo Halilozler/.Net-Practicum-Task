@@ -1,6 +1,22 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using Movie_Store.DbOperations;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//------------------------------------------------------//
+//Db Ye bağlantı yaptık
+builder.Services.AddDbContext<MovieDbContext>(opt => opt.UseInMemoryDatabase(databaseName: "MovieDB"));
+//MovieDbContext oluşturualım.
+builder.Services.AddScoped<IMovieDbContext>(provider => provider.GetService<MovieDbContext>());
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+//AutoMapper Ekliyoruz.
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+//------------------------------------------------------//
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
