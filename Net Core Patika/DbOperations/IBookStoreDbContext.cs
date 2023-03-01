@@ -1,0 +1,17 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Net_Core_Patika.Entity;
+
+namespace Net_Core_Patika.DbOperations
+{
+	public interface IBookStoreDbContext
+	{
+        DbSet<Book> Books { get; set; }
+        DbSet<Genre> Genres { get; set; }
+        DbSet<Author> Authors { get; set; }
+        DbSet<User> Users { get; set; }
+
+        int SaveChanges();
+    }
+}
+
