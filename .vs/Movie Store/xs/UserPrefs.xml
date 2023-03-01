@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{1AE36716-8AE7-4F9C-BA8C-F431377DA79F}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Movie Store" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Movie_220Store PreferredExecutionTarget="/Applications/Opera.app" FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>
