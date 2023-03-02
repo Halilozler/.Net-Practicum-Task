@@ -7,20 +7,36 @@ using Microsoft.AspNetCore.Mvc;
 using Movie_Store.Entity;
 using Movie_Store.Repository.Abstract;
 using Movie_Store.Repository.Concrete;
+using Store.Base.Response;
+using Store.Entity.Dtos;
+using Store.Service.Abstract;
 
 namespace Movie_Store.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DenemeController : ControllerBase
+    public class DenemeController : CustomBaseController
     {
-        private IGenericRepository<Genre> _repository;
+        private readonly IGenreService _service;
 
-        public DenemeController(IGenericRepository<Genre> repositoru)
+        public DenemeController(IGenreService service)
         {
-            _repository = repositoru;
+            _service = service;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var persons = await _service.GetAllAsync();
+            return CreateActionResultInstance(persons);
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> Create(GenreDto dto)
+        {
+            var genre = await _service.InsertAsync(dto);
+
+            return CreateActionResultInstance(genre);
+        }
     }
 }

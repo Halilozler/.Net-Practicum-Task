@@ -11,11 +11,13 @@ namespace Movie_Store.Entity
 		public string Name { get; set; }
 		public string Surname { get; set; }
 
-		public List<int> BoughtMoviesId { get; set; }
-		public List<Movie> BoughtMovies { get; set; }
+		public int BoughtMoviesId { get; set; }
+		//public List<int> BoughtMoviesId { get; set; }
+		//public List<Movie> BoughtMovies { get; set; }
 
-		public List<int> FavoriteGenresId { get; set; }
-		public List<Genre> FavoriteGenres { get; set; }
+		public int FavoriteGenresId { get; set; }
+		//public List<int> FavoriteGenresId { get; set; }
+		//public List<Genre> FavoriteGenres { get; set; }
 	}
 }
 

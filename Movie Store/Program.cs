@@ -7,24 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+
+//------------------------------------------------------//
 //Servisi ekledik.
 builder.Services.AddServiceDI();
-
-//------------------------------------------------------//
-//Db Ye bağlantı yaptık
-//builder.Services.AddDbContext<MovieDbContext>(opt => opt.UseInMemoryDatabase(databaseName: "MovieDB"));
 builder.Services.AddDbContextDI(builder.Configuration);
-//MovieDbContext oluşturualım.
-//builder.Services.AddScoped<IMovieDbContext>(provider => provider.GetService<MovieDbContext>());
-//------------------------------------------------------//
-
-//------------------------------------------------------//
-//AutoMapper Ekliyoruz.
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-//------------------------------------------------------//
-
-//------------------------------------------------------//
-
 //------------------------------------------------------//
 
 builder.Services.AddControllers();

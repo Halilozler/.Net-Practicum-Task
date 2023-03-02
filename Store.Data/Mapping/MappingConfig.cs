@@ -1,5 +1,7 @@
 ﻿using System;
 using AutoMapper;
+using Movie_Store.Entity;
+using Store.Entity.Dtos;
 
 namespace Movie_Store.Mapper
 {
@@ -7,6 +9,7 @@ namespace Movie_Store.Mapper
 	{
 		public MappingConfig()
 		{
+			CreateMap<GenreDto, Genre>().ReverseMap();
 		}
 	}
 }

@@ -1,0 +1,15 @@
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/bin/Debug/net6.0/Store.Entity.deps.json
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/bin/Debug/net6.0/Store.Entity.dll
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/bin/Debug/net6.0/Store.Entity.pdb
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/bin/Debug/net6.0/Store.Base.dll
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/bin/Debug/net6.0/Store.Base.pdb
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/Store.Entity.csproj.AssemblyReference.cache
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/Store.Entity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/Store.Entity.AssemblyInfoInputs.cache
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/Store.Entity.AssemblyInfo.cs
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/Store.Entity.csproj.CoreCompileInputs.cache
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/Store.Entity.csproj.CopyComplete
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/Store.Entity.dll
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/refint/Store.Entity.dll
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/Store.Entity.pdb
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Entity/obj/Debug/net6.0/ref/Store.Entity.dll

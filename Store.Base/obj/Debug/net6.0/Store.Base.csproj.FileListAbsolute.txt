@@ -3,3 +3,10 @@
 /Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.AssemblyInfoInputs.cache
 /Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.AssemblyInfo.cs
 /Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.csproj.CoreCompileInputs.cache
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/bin/Debug/net6.0/Store.Base.deps.json
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/bin/Debug/net6.0/Store.Base.dll
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/bin/Debug/net6.0/Store.Base.pdb
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.dll
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/refint/Store.Base.dll
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.pdb
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/ref/Store.Base.dll

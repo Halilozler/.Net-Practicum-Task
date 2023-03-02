@@ -11,8 +11,9 @@ namespace Movie_Store.Entity
 		public string Name { get; set; }
 		public string Surname { get; set; }
 
-		public List<int> StarringMoviesId { get; set; }
-		public List<Movie> StarringMovies { get; set; }
+		public int StarringMoviesId { get; set; }
+		//public List<int> StarringMoviesId { get; set; }
+		//public List<Movie> StarringMovies { get; set; }
 	}
 }
 

@@ -36,9 +36,24 @@ namespace Store.Service.Concrete
             throw new NotImplementedException();
         }
 
-        public Task<BaseResponse<Dto>> InsertAsync(Dto insertResource)
+        public async Task<BaseResponse<Dto>> InsertAsync(Dto insertResource)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Mapping Resource to Entity
+                var tempEntity = mapper.Map<Dto, Entity>(insertResource);
+
+                await genericRepository.InsertAsync(tempEntity);
+                await unitOfWork.CompleteAsync();
+
+                var mapped = mapper.Map<Entity, Dto>(tempEntity);
+
+                return BaseResponse<Dto>.Success(mapped, 201);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponse<Dto>.Fail("Saving_Error",500);
+            }
         }
 
         public Task<BaseResponse<Dto>> RemoveAsync(int id)

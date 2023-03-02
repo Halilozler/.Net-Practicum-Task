@@ -15,6 +15,16 @@ namespace Movie_Store.Extension
                 services.AddDbContext<MovieDbContext>(options => options
                    .UseSqlServer(dbConfig)
                    );
+                /*
+                services.AddDbContext<MovieDbContext>(opt =>
+                {
+                    opt.UseSqlServer(dbtype, configure =>
+                    {
+                        //Otmatik migrations belirtiğimiz konumdan direk olarak alsın
+                        configure.MigrationsAssembly("Movie_Store.DbOperations");
+                    });
+                });
+                */
             }
             else if (dbtype == "PostgreSQL")
             {
