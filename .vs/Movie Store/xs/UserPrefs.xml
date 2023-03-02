@@ -1,18 +1,40 @@
 ﻿<Properties StartupConfiguration="{1AE36716-8AE7-4F9C-BA8C-F431377DA79F}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.Store.Service FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Movie Store/Controllers/denemeController.cs">
+    <Files>
+      <File FileName="Movie Store/DbOperations/DbContext.cs" Line="11" Column="25" />
+      <File FileName="Movie Store/Program.cs" Line="9" Column="59" />
+      <File FileName="Movie Store/Mapper/MapperConfig.cs" Line="9" Column="4" />
+      <File FileName="Movie Store/Repository/Abstract/IGenericRepository.cs" Line="6" Column="69" />
+      <File FileName="Movie Store/Repository/Concrete/GenericRepository.cs" Line="14" Column="27" />
+      <File FileName="Movie Store/Controllers/denemeController.cs" Line="15" Column="47" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Movie Store" expanded="True" />
+          <Node name="Movie Store" expanded="True">
+            <Node name="Movie Store" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="denemeController.cs" selected="True" />
+              </Node>
+              <Node name="Entity" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="Abstract" expanded="True" />
+                <Node name="Concrete" expanded="True" />
+              </Node>
+              <Node name="Service" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Movie_220Store PreferredExecutionTarget="/Applications/Opera.app" FirstBuild="True" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Store.Entity FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Movie_220Store PreferredExecutionTarget="/Applications/Opera.app" />
+  <MonoDevelop.Ide.ItemProperties.Store.Data FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Store.Base FirstBuild="True" />
 </Properties>

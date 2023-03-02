@@ -1,14 +1,11 @@
-﻿using System;
-using System.Linq.Expressions;
-using Microsoft.AspNetCore.Hosting.Server;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Movie_Store.Base;
 using Movie_Store.DbOperations;
 using Movie_Store.Repository.Abstract;
 
 namespace Movie_Store.Repository.Concrete
 {
-	public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class, IEntity
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class, IEntity
 	{
         private readonly MovieDbContext _context;
         private DbSet<TEntity> _entities;

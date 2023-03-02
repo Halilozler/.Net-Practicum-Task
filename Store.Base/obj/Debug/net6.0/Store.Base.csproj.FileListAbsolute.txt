@@ -1,0 +1,5 @@
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.csproj.AssemblyReference.cache
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.GeneratedMSBuildEditorConfig.editorconfig
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.AssemblyInfoInputs.cache
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.AssemblyInfo.cs
+/Users/halilozler/Desktop/.Net-Practicum-Task/Store.Base/obj/Debug/net6.0/Store.Base.csproj.CoreCompileInputs.cache

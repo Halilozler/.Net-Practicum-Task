@@ -32,6 +32,10 @@ namespace Movie_Store.DbOperations
             modelBuilder.Entity<Customer>()
                 .HasMany(p => p.FavoriteGenres)
                 .WithOne();
+
+            //modelBuilder.Entity<Movie>().Property(x => x.Price).HasColumnType("decimal(18,2)");
+
+            //base.OnModelCreating(modelBuilder);
         }
 
         //Program.cs kısmına db tanımladık
